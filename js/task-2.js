@@ -9,7 +9,7 @@ const ingredients = [
 const ingredientsRef = document.querySelector('#ingredients');
 // console.log(ingredientsRef);
 
-const listIngredientsRef = arr =>
+const addListIngredientsRef = arr =>
   arr.map(item => {
     const addLi = document.createElement('li');
     addLi.textContent = item;
@@ -17,10 +17,10 @@ const listIngredientsRef = arr =>
     return addLi;
   });
 
-// console.log(listIngredientsRef(ingredients));
-// const test = listIngredientsRef(ingredients);
+// console.log(addListIngredientsRef(ingredients));
+// const test = addListIngredientsRef(ingredients);
 // console.log('test:', typeof test);
 
-ingredientsRef.append(...listIngredientsRef(ingredients));
+ingredientsRef.append(...addListIngredientsRef(ingredients));
 
 console.log(ingredientsRef);
