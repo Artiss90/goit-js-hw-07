@@ -1,10 +1,15 @@
+:root {
+  margin: 20px;
+}
 li {
   list-style: none;
 }
 .stretch {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   margin: 10px;
+  background: black;
 }
 
 #validation-input {
