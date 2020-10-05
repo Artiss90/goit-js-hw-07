@@ -25,7 +25,7 @@ const galleryRef = document.querySelector('#gallery');
 
 // const addLi = document.createElement('li');
 // const addImg = document.createElement('img');
-// galleryRef.append(addLi, addImg); только соседи!!!!
+// galleryRef.append(addLi, addImg); //только соседи!!!!
 // console.log(galleryRef);
 
 // addImg.src = url;

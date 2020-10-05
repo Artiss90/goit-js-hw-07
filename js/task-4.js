@@ -7,9 +7,10 @@ const btnDecrementRef = document.querySelector(
 const btnIncrementRef = document.querySelector(
   'button[data-action="increment"]',
 );
-
+// handleDecrementBtnClick
 const decrement = () =>
   (counterValueRef.textContent = Number(counterValueRef.textContent) - 1);
+// handleIncrementBtnClick;
 const increment = () =>
   (counterValueRef.textContent = Number(counterValueRef.textContent) + 1);
 
