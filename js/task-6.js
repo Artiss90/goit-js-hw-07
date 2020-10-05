@@ -6,7 +6,7 @@
 
 const inputRef = document.querySelector('#validation-input');
 
-const handleInputValidChange = () => {
+const handleInputValidBlur = () => {
   if (inputRef.value.length == inputRef.dataset.length) {
     inputRef.classList.add('valid');
     inputRef.classList.remove('invalid');
@@ -16,4 +16,4 @@ const handleInputValidChange = () => {
   }
 };
 
-inputRef.addEventListener('change', handleInputValidChange);
+inputRef.addEventListener('blur', handleInputValidBlur);
