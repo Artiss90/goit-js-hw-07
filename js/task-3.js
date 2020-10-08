@@ -34,18 +34,10 @@ const galleryRef = document.querySelector('#gallery');
 // console.log(addImg);
 
 /*1-й метод*/
-// galleryRef.insertAdjacentHTML(
-//   'afterbegin',
-//   images.reduce((acc, { url, alt }) => {
-//     acc += `<li><img src="${url}" alt="${alt}" width=200/></li>`;
-//     return acc;
-//   }, ''),
-// );
-
-/*2-й метод*/
-images.forEach(img =>
-  galleryRef.insertAdjacentHTML(
-    'afterbegin',
-    `<li><img src="${img.url}" alt="${img.alt}" width=200/></li>`,
-  ),
+galleryRef.insertAdjacentHTML(
+  'afterbegin',
+  images.reduce((acc, { url, alt }) => {
+    acc += `<li><img src="${url}" alt="${alt}" width=200/></li>`;
+    return acc;
+  }, ''),
 );
